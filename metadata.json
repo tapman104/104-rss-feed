@@ -1,0 +1,8 @@
+{
+  "name": "Material RSS Reader",
+  "description": "A modern, lightweight Material Design 3 RSS Reader with categories, bookmarks, offline support, search, and custom feeds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

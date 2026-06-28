@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+}
+
+:root {
+  /* SOPHISTICATED IVORY LIGHT THEME */
+  --background: #faf9f5;
+  --surface: #f4f2eb;
+  --surface-container: #eae7df;
+  --surface-container-low: #f1ede4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-high: #e1dcd1;
+  
+  --primary: #5c4c7c;
+  --primary-foreground: #ffffff;
+  --primary-container: #e9e4f0;
+  --on-primary-container: #23183d;
+  
+  --secondary: #615b6d;
+  --secondary-container: #e8e4ee;
+  --on-secondary-container: #1e1929;
+  
+  --on-surface: #1c1b18;
+  --on-surface-variant: #5e5b54;
+  
+  --outline: rgba(0, 0, 0, 0.08);
+  --outline-variant: rgba(0, 0, 0, 0.04);
+}
+
+.dark {
+  /* SOPHISTICATED DARK THEME */
+  --background: #0a0a0a;
+  --surface: #121212;
+  --surface-container: #1e1e1e;
+  --surface-container-low: #161616;
+  --surface-container-lowest: #0d0d0d;
+  --surface-container-high: #262626;
+  
+  --primary: #d0bcff;
+  --primary-foreground: #381e72;
+  --primary-container: #381e72;
+  --on-primary-container: #eaddff;
+  
+  --secondary: #ccc2dc;
+  --secondary-container: #332d41;
+  --on-secondary-container: #e8def8;
+  
+  --on-surface: #e1e1e1;
+  --on-surface-variant: #a0a0a0;
+  
+  --outline: rgba(255, 255, 255, 0.12);
+  --outline-variant: rgba(255, 255, 255, 0.06);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom fade transitions for dark theme transitions */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--background);
+}
